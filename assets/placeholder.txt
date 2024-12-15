@@ -1,0 +1,23 @@
+This directory contains the following game assets:
+
+Images:
+- background.png: Snowy winter background
+- background_trees.png: Parallax tree layer
+- santa.png: Santa sprite sheet (32x48 pixels per frame)
+- robber.png: Robber sprite sheet (32x48 pixels per frame)
+- present.png: Gift box sprite
+- snowflake.png: Snowflake particle
+- powerup_speed.png: Speed boost power-up
+- powerup_shield.png: Shield power-up
+- powerup_magnet.png: Present magnet power-up
+- candy_cane.png: Candy cane obstacle
+- ice_patch.png: Slippery ice obstacle
+- sparkle.png: Sparkle particle effect
+
+Audio:
+- jingle_bells.mp3: Background music
+- collect.mp3: Present collection sound
+- jump.mp3: Jump sound effect
+- powerup.mp3: Power-up collection sound
+- victory.mp3: Victory fanfare
+- gameover.mp3: Game over sound

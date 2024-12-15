@@ -1,0 +1,71 @@
+# Node.js Installation Guide for Windows
+
+1. Download Node.js:
+   - Go to https://nodejs.org/
+   - Click the LTS (Long Term Support) version download button
+   - Save the .msi installer file
+
+2. Install Node.js:
+   - Double-click the downloaded .msi file
+   - Check "I accept the terms in the License Agreement"
+   - Click "Next"
+   - Keep the default installation location (C:\Program Files\nodejs\)
+   - Click "Next"
+   - IMPORTANT: Make sure "Add to PATH" is checked
+   - Click "Next"
+   - Check "Automatically install the necessary tools..."
+   - Click "Next"
+   - Click "Install"
+   - Wait for the installation to complete
+   - Click "Finish"
+
+3. Verify Installation:
+   - Press Windows + R
+   - Type "cmd" and press Enter
+   - In the Command Prompt, type:
+     node --version
+     npm --version
+   - You should see version numbers displayed
+
+4. If Node.js is still not recognized:
+   - Press Windows + X
+   - Click "System"
+   - Click "Advanced system settings"
+   - Click "Environment Variables"
+   - Under "System variables", find "Path"
+   - Click "Edit"
+   - Click "New"
+   - Add these paths:
+     C:\Program Files\nodejs\
+     C:\Users\[YourUsername]\AppData\Roaming\npm
+   - Click "OK" on all windows
+   - Restart your computer
+
+5. After Installation:
+   - Close all Command Prompt windows
+   - Open a new Command Prompt
+   - Navigate to your game directory:
+     cd c:\Users\user\Desktop\Seowoo\christmassantagame
+   - Install dependencies:
+     npm install
+   - Install Vercel globally:
+     npm install -g vercel
+   - Start the development server:
+     npm run dev
+
+Please follow these steps carefully and restart your computer after installation. Let me know once you've completed these steps.
+
+# installs fnm (Fast Node Manager)
+winget install Schniz.fnm
+
+# configure fnm environment
+fnm env --use-on-cd | Out-String | Invoke-Expression
+
+# download and install Node.js
+fnm use --install-if-missing 23
+
+# verifies the right Node.js version is in the environment
+node -v # should print `v23.4.0`
+
+# verifies the right npm version is in the environment
+npm -v # should print `10.9.2`
